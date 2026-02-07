@@ -20,3 +20,33 @@ print("Sum =", total)
 # 5) Print multiplication table of 5
 for i in range(1, 11):
     print("5 x", i, "=", 5 * i)
+
+# 6) Print numbers using while loop (1 to 5)
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+
+# 7) Countdown from 10 to 1 (while loop)
+i = 10
+while i >= 1:
+    print(i)
+    i -= 1
+
+# 8) break example (stop loop when number is 7)
+for i in range(1, 20):
+    if i == 7:
+        break
+    print(i)
+
+# 9) continue example (skip number 5)
+for i in range(1, 11):
+    if i == 5:
+        continue
+    print(i)
+
+# 10) pass example (placeholder)
+for i in range(3):
+    pass
+
+print("Loop finished (pass did nothing)")
