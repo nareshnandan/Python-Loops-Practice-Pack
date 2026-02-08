@@ -88,3 +88,49 @@ while num > 0:
     sum_digits += digit
     num = num // 10
 print("Sum of digits =", sum_digits)
+
+# 16) Check if number is palindrome
+num = int(input("Enter a number: "))
+original = num
+rev = 0
+
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num = num // 10
+
+if original == rev:
+    print("Palindrome Number")
+else:
+    print("Not a Palindrome")
+
+# 17) Print star pattern (simple)
+rows = int(input("Enter number of rows: "))
+for i in range(1, rows + 1):
+    print("*" * i)
+
+# 18) Find largest number in a list (using loop)
+numbers = [10, 45, 2, 99, 34, 76]
+largest = numbers[0]
+
+for num in numbers:
+    if num > largest:
+        largest = num
+
+print("Largest =", largest)
+
+# 19) Print only vowels from a string
+text = input("Enter a word: ").lower()
+for ch in text:
+    if ch in "aeiou":
+        print(ch)
+
+# 20) Count vowels in a string
+text = input("Enter a word: ").lower()
+count = 0
+
+for ch in text:
+    if ch in "aeiou":
+        count += 1
+
+print("Total vowels =", count)
