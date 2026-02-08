@@ -50,3 +50,41 @@ for i in range(3):
     pass
 
 print("Loop finished (pass did nothing)")
+
+# 11) Print odd numbers between 1 to 20
+for i in range(1, 21):
+    if i % 2 != 0:
+        print(i)
+
+# 12) Factorial of a number (using for loop)
+n = int(input("Enter a number: "))
+fact = 1
+for i in range(1, n + 1):
+    fact *= i
+print("Factorial =", fact)
+
+# 13) Reverse a number (using while loop)
+num = int(input("Enter a number: "))
+rev = 0
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num = num // 10
+print("Reversed number =", rev)
+
+# 14) Count digits in a number
+num = int(input("Enter a number: "))
+count = 0
+while num > 0:
+    count += 1
+    num = num // 10
+print("Total digits =", count)
+
+# 15) Sum of digits in a number
+num = int(input("Enter a number: "))
+sum_digits = 0
+while num > 0:
+    digit = num % 10
+    sum_digits += digit
+    num = num // 10
+print("Sum of digits =", sum_digits)
